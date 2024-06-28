@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	 xmlns:Names="http://www.tibco.com/schemas/2.ParseRenderXML/Resources/Schemas/Models/Names"
+	 targetNamespace="http://www.tibco.com/schemas/2.ParseRenderXML/Resources/Schemas/Models/Names"
+	 elementFormDefault="qualified"
+	 attributeFormDefault="unqualified">
+	<xs:element name="Names">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="Names:Name" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Name" type="xs:string"/>
+</xs:schema>
